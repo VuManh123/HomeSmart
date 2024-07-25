@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.RegisterController">
+   <children>
+      <AnchorPane prefHeight="71.0" prefWidth="600.0" style="-fx-background-color: #142966;">
+         <children>
+            <ImageView fx:id="logoImage" fitHeight="70.0" fitWidth="70.0" layoutX="20.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../../../../img/FINTECH.png" />
+               </image>
+            </ImageView>
+            <MenuBar layoutX="437.0" layoutY="23.0">
+              <menus>
+                <Menu fx:id="helpMenu" mnemonicParsing="false" text="Hỗ trợ" />
+                <Menu fx:id="presentMenu" mnemonicParsing="false" style="background: #ffffff;" text="Giới thiệu" />
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <Label layoutX="46.0" layoutY="96.0" text="Họ và tên:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="136.0" text="Số điện thoại:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="177.0" text="Địa chỉ:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="221.0" text="Mật khẩu:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="261.0" text="Xác nhận mật khẩu:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="141.0" layoutY="94.0" prefHeight="25.0" prefWidth="422.0" promptText="Họ tên" />
+      <TextField fx:id="phoneTextField" layoutX="142.0" layoutY="134.0" prefHeight="25.0" prefWidth="422.0" promptText="Số điện thoại" />
+      <TextField fx:id="adressTextField" layoutX="141.0" layoutY="175.0" prefHeight="25.0" prefWidth="422.0" promptText="Địa chỉ" />
+      <Button fx:id="registerButton" layoutX="171.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="258.0" style="-fx-background-color: #142966;" text="Đăng ký" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="171.0" layoutY="356.0" onMouseClicked="#handleBackButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="258.0" style="-fx-background-color: #142966;" text="Quay lại" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pwField" layoutX="141.0" layoutY="219.0" prefHeight="25.0" prefWidth="422.0" promptText="Mật khẩu" />
+      <PasswordField fx:id="comfirmPwField" layoutX="178.0" layoutY="259.0" prefHeight="25.0" prefWidth="385.0" promptText="Xác nhận mật khẩu" />
+   </children>
+</AnchorPane>
